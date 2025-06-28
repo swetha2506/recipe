@@ -1,0 +1,75 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-image: url(image4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.recipe-card {
+  width: 300px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 15px;
+  background-image: url(wooden-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card h1 {
+  text-align: center;
+  color: black;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.recipe-img {
+  width: 250px;
+  border-radius: 10px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.ingredients, .steps {
+  margin: 20px 0;
+}
+
+.toggle-btn, .start-btn {
+  padding: 10px 20px;
+  background-color: darkolivegreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px auto;
+  display: block;
+  width: 250px;
+}
+
+.toggle-btn:hover, .start-btn:hover {
+  background-color: rgb(75, 98, 42);
+}
+
+.step {
+  opacity: 0.4;
+  transition: opacity 0.3s ease-in-out;
+  
+}
+
+.step.active {
+  opacity: 1;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .recipe-card {
+    padding: 10px;
+  }
+}

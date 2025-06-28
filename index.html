@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Homemade Pizza Recipe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="recipe-card">
+    <h1> PIZZA</h1>
+    <img src="pizza.jpg" alt="Pizza" class="recipe-img"/>
+    <div class="info">
+    <p><strong>⏱ Preparation Time:</strong> 1 hour 30 minutes</p>
+    <p><strong>🍽 Serving Size:</strong> 2–3 people</p>
+    </div>
+
+    <button class="toggle-btn" onclick="toggleIngredients()">Show Ingredients</button>
+    <ul class="ingredients" id="ingredients" style="display: none;">
+      <li>2 cups all-purpose flour</li>
+      <li>1 tsp dry yeast</li>
+      <li>1 cup warm water</li>
+      <li>1 tbsp olive oil</li>
+      <li>1/2 tsp salt</li>
+      <li>1/2 cup pizza sauce</li>
+      <li>1 cup mozzarella cheese</li>
+      <li>1/2 cup sliced onions</li>
+      <li>1/2 cup chopped capsicum</li>
+      <li>1/4 cup sweet corn</li>
+      <li>Optional: mushrooms / pepperoni / olives</li>
+    </ul>
+
+    <button class="toggle-btn" onclick="toggleSteps()">Start Cooking</button>
+    
+
+    <div class="steps" id="steps-container" style="display: none;">
+      <ol id="steps">
+        <li class="step">Activate yeast in warm water and let sit for 5 minutes.</li>
+        <li class="step">Mix flour, salt, oil, and yeast water into a dough.</li>
+        <li class="step">Let the dough rest and rise for 1 hour.</li>
+        <li class="step">Roll the dough and place it on a tray.</li>
+        <li class="step">Spread pizza sauce evenly.</li>
+        <li class="step">Add toppings: onion, capsicum, corn, and optional veggies.</li>
+        <li class="step">Add mozzarella cheese on top.</li>
+        <li class="step">Bake at 220°C (430°F) for 15–20 minutes.</li>
+      </ol>
+
+      <progress id="progressBar" value="0" max="8" style="width: 100%; margin-top: 10px;"></progress>
+      <button class="start-btn" onclick="startCooking()">Next Step</button>
+
+      
+    </div>
+    
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
